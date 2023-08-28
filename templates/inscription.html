@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Inscription</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
     <h1>Inscription</h1>
     <form method="POST" action="{{ url_for('inscription') }}">
         <label for="username">Nom d'utilisateur :</label>
@@ -15,5 +11,4 @@
         <input type="submit" value="S'inscrire">
     </form>
     <a href="{{ url_for('accueil') }}">Retour à l'accueil</a>
-</body>
-</html>
+    {% endblock %}

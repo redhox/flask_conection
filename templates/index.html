@@ -1,12 +1,7 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Accueil</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
     <h1>Page d'accueil</h1>
     <a href="{{ url_for('connexion') }}">Log In</a>
     <a href="{{ url_for('inscription') }}">Sign In</a>
-</body>
-</html>
+    {% endblock %}
